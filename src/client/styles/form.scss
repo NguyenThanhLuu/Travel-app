@@ -1,0 +1,24 @@
+form {
+    border: 2px solid blue;
+    border-radius: 10px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    input {
+        padding: 5px 20px;
+        line-height: 16px;
+        margin: 10px 0;
+        height: 40px;
+    }
+    .btn-submit {
+        cursor: pointer;
+        background-color: rgb(40, 40, 255);
+        color: #fff;
+        font-weight: bold;
+        &:hover {
+            background-color: rgb(2, 44, 184);
+            color: #fff;
+        }
+    }
+}
+

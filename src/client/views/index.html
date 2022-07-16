@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Test</title>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="logo">
+                LN
+            </div>
+            <div class="nav">
+                <div class="nav__item">MENU</div>
+                <div class="nav__item">MORE</div>
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <form class="" onsubmit="return Client.handleSubmit(event)">
+                    <input id="name" type="text" name="input" value="" placeholder="Type your's article in here...">
+                    <input class="btn-submit" type="submit" name="" value="SUBMIT">
+                </form>
+            <section>
+
+            <section>
+                <h1>Form Results:</h1>
+                <div class="same_line">
+                    <p>+ Agreement:</p> <p id="agreement"></p>
+                </div>
+                <div class="same_line">
+                    <p>+ Confidence:</p><p id="confidence"></p>
+                </div>
+                <div class="same_line">
+                    <p>+ Tag score:</p><p id="scoreTag"></p>
+                </div>
+                <div class="same_line">
+                    <p>+ Subjectivity:</p><p id="subjectivity"></p>
+                </div>
+                <div class="same_line">
+                    <p>+ Snippet of your's article:</p><p id="snippet"></p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>@All right reserve</p>
+        </footer>
+
+        <script>
+            // Check that service workers are supported
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+        </script>
+    </body>
+</html>
