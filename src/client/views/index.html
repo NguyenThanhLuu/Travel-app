@@ -18,30 +18,54 @@
         </header>
 
         <main>
-            <section>
-                <form class="" onsubmit="return Client.handleSubmit(event)">
-                    <input id="name" type="text" name="input" value="" placeholder="Type your's article in here...">
-                    <input class="btn-submit" type="submit" name="" value="SUBMIT">
+            <section>   
+                <form>  
+                    Enter location you want to visit    
+                    <input id="name" type="text" name="input" value="" placeholder="">
+                    Enter day you will come the place:
+                    <input id="day" value="" placeholder="Type Day here...">
+                    Enter month you will come the place:
+                    <input id="month" value="" placeholder="Type Month here...">
+                    Enter year you will come the place:
+                    <input id="year" value="" placeholder="Type Year here...">
+                    <button id="submit"> SUBMIT</button>
                 </form>
             <section>
 
-            <section>
-                <h1>Form Results:</h1>
-                <div class="same_line">
-                    <p>+ Agreement:</p> <p id="agreement"></p>
-                </div>
-                <div class="same_line">
-                    <p>+ Confidence:</p><p id="confidence"></p>
-                </div>
-                <div class="same_line">
-                    <p>+ Tag score:</p><p id="scoreTag"></p>
-                </div>
-                <div class="same_line">
-                    <p>+ Subjectivity:</p><p id="subjectivity"></p>
-                </div>
-                <div class="same_line">
-                    <p>+ Snippet of your's article:</p><p id="snippet"></p>
-                </div>
+            <section id="infoShow">
+                <!-- <h1>Dự báo thời tiết</h1>
+                <div>
+                    <div class="location-img">
+                        <img id="locationImg" width="300px" height="200px">
+                    </div>
+                    <div class="location-info">
+                        <div class="location-info__detail">
+                            <span>Địa điểm đến: </span>
+                            <div id="locationName"></div>
+                        </div>
+                        <div class="location-info__detail">
+                            <span>Ngày đến: </span>
+                            <div id="commingDateInfo"></div>
+                        </div>
+                        <div class="location-info__detail">
+                            <span>Số ngày còn lại: </span>
+                            <div id="remainingDateInfo"></div>
+                        </div>
+                        <div class="location-info__detail">
+                            <span>Nhiệt độ cao nhất: </span>
+                            <div id="maxTempInfo"></div>
+                        </div>
+                        <div class="location-info__detail">
+                            <span>Nhiệt độ thấp nhất: </span>
+                            <div id="minTempInfo"></div>
+                        </div>
+                        <div class="location-info__detail">
+                            <span>Trạng thái: </span>
+                            <div id="weatherStatus"></div>
+                        </div>
+                    </div>
+                </div> -->
+               
             </section>
         </main>
 
@@ -50,7 +74,9 @@
         </footer>
 
         <script>
-            // Check that service workers are supported
+            document.getElementById('submit').addEventListener('click', () => {
+                Client.handleSubmit(event)})
+            // Check that service workers are supported 
             if ('serviceWorker' in navigator) {
                 window.addEventListener('load', () => {
                     navigator.serviceWorker.register('/service-worker.js');
