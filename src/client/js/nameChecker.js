@@ -1,9 +1,9 @@
-function checkForName(inputText) {
-    if (inputText.trim() === '' ) {
-        alert("Input can't be empty!");
-        return;
-    }
-    return inputText
+const checkEmptyField = (inputText) => {
+  if (inputText.trim() === "") {
+    alert("All fields must be filled!");
+    return;
+  }
+  return inputText;
 }
 
-export { checkForName }
+export { checkEmptyField };

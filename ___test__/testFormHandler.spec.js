@@ -1,7 +1,7 @@
 import { handleSubmit } from "../src/client/js/formHandler"
 
 describe('handle submit function', () => {
-   test('test data handle submit', () => {
+   test('when user press submit button', () => {
     expect(handleSubmit).toBeDefined()
     });
 });

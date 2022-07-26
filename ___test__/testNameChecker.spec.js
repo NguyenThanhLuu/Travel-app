@@ -1,8 +1,8 @@
-import { checkForName } from "../src/client/js/nameChecker"
+import { checkEmptyField } from "../src/client/js/nameChecker"
 
 describe('check value input', () => {
-    test('test input is A value A and return also value A', () => {
-        expect(checkForName('text')).toBe('text');
+    test('test value input user press', () => {
+        expect(checkEmptyField('text')).toBe('text');
     });
 });
 

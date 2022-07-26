@@ -2,30 +2,13 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 10px 40px;
+
     .logo {
         border-radius: 50%;
-        border: 3px solid blue;
         text-align: center;
         padding: 10px;
         font-weight: bold;
-        color: red;
-        font-size: 20px;
-    }
-    .nav {
-        display: flex;
-        align-items: center;
-        &__item {
-            border: 1px solid;
-            padding: 6px;
-            background-color: blue;
-            color: #fff;
-            margin-right: -5px;
-            min-width: 4em;
-            text-align: center;
-            &:hover {
-                background-color: green;
-                cursor: pointer;
-            }
-        }
+        color: rgb(0, 179, 0);
+        font-size: 25px;
     }
 }

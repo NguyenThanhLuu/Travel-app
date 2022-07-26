@@ -1,0 +1,40 @@
+@media (min-width: 0px) and (max-width: 730px) {
+   body {
+      font-size: 25px;
+
+      header {
+         .logo {
+            font-size: 40px;
+            color: rgb(0, 179, 0);
+         }
+      }
+
+      form {
+
+         input {
+            padding: 5px 20px;
+            line-height: 16px;
+            margin: 10px 0;
+            height: 60px;
+            font-size: 20px;
+
+         }
+
+         .time-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+         }
+
+         #submit {
+            margin-top: 20px;
+            padding: 40px 0;
+            font-weight: 700;
+            font-size: 25px;
+            background-color: rgb(15, 211, 15);
+         }
+      }
+
+   }
+
+}

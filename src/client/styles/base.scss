@@ -2,18 +2,52 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
+    background-color: rgb(0, 0, 0);
 
-main {
-    flex: 2;
-}
+    section {
+        max-width: 800px;
+        margin: 50px auto;
 
-section {
-    max-width: 800px;
-    margin: 50px auto;
-}
+    }
 
-.same_line {
-    display: flex;
-    
+    #infoShow {
+        h1 {
+            color: rgb(255, 255, 255);
+        }
+
+        .container {
+            border-radius: 4px;
+            padding: 10px;
+            background-color: rgb(86, 74, 87);
+
+            &__img-and-info {
+                display: flex;
+                justify-content: space-around;
+
+                img {
+                    border-radius: 4px;
+                }
+            }
+
+            .location-info {
+                color: rgb(255, 255, 255);
+
+                &__detail {
+                    display: flex;
+                }
+            }
+
+            .location-info__detail {
+                color: rgb(255, 255, 255);
+            }
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+            color: rgb(255, 255, 0);
+        }
+    }
 }
