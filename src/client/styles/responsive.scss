@@ -35,6 +35,35 @@
          }
       }
 
+
+      #infoShow {
+
+         .container {
+            &__img-and-info {
+               display: flex;
+               flex-direction: column;
+               justify-content: space-around;
+
+               .location-img {
+                  text-align: center;
+                  padding-top: 1rem;
+               }
+            }
+
+            .location-info {
+               color: rgb(255, 255, 255);
+
+               &__detail {
+                  display: flex;
+               }
+            }
+
+            .location-info__detail {
+               color: rgb(255, 255, 255);
+            }
+         }
+      }
+
    }
 
 }
